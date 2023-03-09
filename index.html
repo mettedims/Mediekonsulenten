@@ -4,9 +4,157 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Banding.Co</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1f99888007.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <div class="container">
+    <!--Navigation-->
+        <header>
+            <!--Hamburger menu-->
+            <nav class="mobile-nav">
+                <a href="index.html"><img src=" " alt="mediekonsulenten logo"></a>
+                <i class="navToggle bars fa-solid fa-bars fa-2xl"></i>
+            </nav>
+            <nav class="desktop-nav">
+            <!--Desktop navigation-->
+                <ul>
+                    <li><a class="active" href="#">Forside</a></li>
+                    <li><a href="#">Om os</a></li>
+                    <li><a href="#">Vi tilbyder</a></li>
+                    <li><a href="kontakt.html">Kontakt os</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Banner billede med CTA-->
+        <header class="header-img">
+            <img class=" " src=" " alt="Kontorbillede">
+            <img class=" " src=" " alt="Kontorbillede">
+            <div class="banner-tekst">
+            <h1>Bliv klogere på hvad vi tilbyder</h1>
+            <a class="primary-btn" href="#">Vi tilbyder</a>  
+            </div>  
+        </header>
+
+        <!--Hovedindhold-->
+        <main>
+            <h2>Vi tilbyder</h2>
+            <section class="cta-wrapper">
+                <!--CTA bokse-->
+                <div class="cta-1">
+                    <img src=" " alt="">
+                    <h3>Grafisk design</h3>
+                    <a class="primary-btn" href="#">Læs mere om grafisk design</a>
+                </div>
+
+                <div class="cta-2">
+                    <img src=" " alt="">
+                    <h3>Logo</h3>
+                    <a href="#">Læs mere om logo</a>
+                </div>
+
+                <div class="cta-3">
+                    <img src=" " alt="">
+                    <h3>Hjemmeside</h3>                   
+                    <a href="#">Læs om hjemmesideudvikling</a>
+                </div>
+            </section>
+
+            <!--Tekst og billede sektion-->
+            <section class="txt-img-section">
+                <div class="tekst">
+                    <h2>Vi har dig med hele vejen</h2>
+                    <p>Vi er eksperter i at lave brugervenlige hjemmesider, der er responsive til både mobil   og tablets. 
+                    </p>
+                    <p>Dine ønsker og dine kunders behov forenes og vil tilsammen resultere  i din hjemmeside - dit brand.</p>
+                    <a class="secondary-btn" href="#">Læs mere om vores proces</a>
+                </div>
+                <div class="billede">
+                    <!--Tom div til billede som indsættes i scss-->
+                </div>
+            </section>
+
+             <!--Tekst og billede sektion 1-->
+             <section class="txt-img-section-rund">
+                <div class="tekst">
+                    <h2>Vi hjælper din virksomhed på vej</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ipsam beatae hic quis odio illo fuga consectetur dolor asperiores impedit fugiat at laboriosam, repellendus eos maxime distinctio praesentium veniam dicta! 
+                    </p>
+                    <a class="secondary-btn" href="#">Læs mere om vores proces</a>
+                </div>
+                <div class="billede-rund">
+                    <!--Tom div til billede som indsættes i scss-->
+                </div>
+            </section>
+
+           <!--Billede med CTA-->
+        <header class="img-m-cta">
+            <img class=" " src=" " alt="Fugleperspektiv billede">
+            <img class=" " src=" " alt="Fugleperspektiv billede">
+            <a class="primary-btn" href="#">Vi tilbyder</a>    
+        </header>
+
+        <section class="personale-wrapper">
+            <!--personale bokse-->
+            <div class="p-1">
+                <img src=" " alt="">
+                <p>Henriette Sørup, Multimediedesigner.</p>
+                <p> Brænder for kreative designs og den udvidede farvepalette</p>
+            </div>
+
+            <div class="p-2">
+                <img src=" " alt="">
+                <p>Mette V. Pedersen, Multimediedesigner, tovholder.</p>
+                <p>Brænder for idegenering og udarbejdelse af tekster</p>
+            </div>
+
+            <div class="p-3">
+                <img src=" " alt="">
+                <p>Renée Van Mammen, Multimediedesigner.</p>
+                <p>Brænder for kodning og de tekniske detaljer</p>
+            </div>
+
+            <a class="om os-btn" href="#">Læs mere om os</a> 
+
+        </section>
+
+        <!--Tekst og billede sektion-->
+        <section class="txt-img-section-slut">
+            <div class="tekst">
+                <h2>Kontakt os for et uforpligtende tilbud</h2>
+                <p>Hvis I ønsker at hører nærmere omkring hvad vi kan tilbyde, er du mere end velkommen til at kontante os i vores kontaktformular eller via telefon.</p>
+                <a class="secondary-btn" href="#">kontakt os</a>
+            </div>
+            <div class="billede">
+                <!--Tom div til billede som indsættes i scss-->
+            </div>
+        </section>
+
+        </main>
+
+        <!--Footer-->
+        <footer>
+            <section class="footer-left">
+                <h4>Info</h4>
+                <p>Mediekonsulenten.dk</p>
+                <p>havneparken 1</p>
+                <p>6000 Kolding</p>
+                <p>Tlf.: <a href="tel:12345678">12 34 56 78</a></p>
+                <p>CVR: 1234 5678</p>
+            </section>
+            <div class="footer-right">
+                <img class="logo-footer" src=" " alt="">
+            </div>
+    </div>
+    <!--Javascript som gør burger menu aktiv - så menupunkter kan ses -  ved at indsætte class 'toggleShow' ved click på class 'navToggle'-->
+    <script>
+        const navbarToggle = () => {
+        const nav = document.querySelector('.desktop-nav');
+        nav.classList.toggle('toggleShow');
+        }
+        document.querySelector('.navToggle').addEventListener('click', navbarToggle);
+    </script>
 </body>
 </html>

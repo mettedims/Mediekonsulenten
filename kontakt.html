@@ -1,1 +1,94 @@
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="om.html"><img src="img/logo.png" alt="firmalogo af en ræv"></a>
+            <ul>
+                <!--ul>li*2>a>-->
+                <li><a href="om.html">Om</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        
+        </nav>
+    </header>
+    <main class="kontaktform">
+    <h1>Kontakter</h1>
+        <h2>Herunder kan du kontakte os via kontaktformularen</h2>
+    <form>
+        <label for="navn">Navn</label>
+        <input id="navn" type="text">
 
+        <label class="visually-hidden" for="adresse">Adresse</label>
+        <!--visually-hidden betyder at adressen bliver gemt udenfor boksen, men den derimod bliver læst op-->
+        <input placeholder="Adresse" id="adresse" type="text">
+        <!--Placeholder er teksten der skal erstattes-->
+
+        <label for="mail">e-mail</label>
+        <input id="mail" type="email" required>
+        <!--required betyder at denne skal boxs skal udfyldes-->
+
+        <label for="telefom">Telefonnummer</label>
+        <input id="telefon" type="tel">
+
+        <label for="parti">Vælg dit parti</label>
+        <select id="parti" name="select">
+            <option value="0" selected="true" disabled>Vælg dit parti</option>
+            <option value="1">SF</option>
+            <option value="2">Frie Grønne</option>
+            <option value="3">Danmarks demokraterne</option>
+            <option value="4">Socialdekratiet</option>
+        </select>
+        <!--select og option er for at lave en dropdown menu-->
+        <!--value er nummer for rækkefølgen og 0 er default-->
+
+        <fieldset class="checkbox">
+            <legend>Vælg services</legend>
+        <div>
+            <input id="støvsugning" type="checkbox" name="services" value="Rengøring">
+            <label for="støvsugning">Rengøring</label>
+            </div>
+       
+        <!--fieldset er er moren "boxen"-->
+        <!--legend er overskrift i "boxen"-->
+        <!--name = sanne navn så man kan vælge 1 i radio-->
+        <div>
+            <input id="opvasker" type="checkbox" name="services" value="Opvasker">
+            <label for="opvasker">Opvasker</label>
+            </div>
+
+         <div>
+            <input id="avisbud" type="checkbox" name="services" value="Avisbud">
+            <label for="avisbud">Avisbud</label>
+            </div>
+        </fieldset>
+
+        <label for="besked">Besked</label>
+        <textarea id="besked" rows="8" cols="20"></textarea>
+
+        <fieldset>
+            <legend>Må vi gerne kontakte dig på telefonen?</legend>
+        <input type="radio" id="ja" value="ja" name="kontakt">
+        <label for="ja">Ja</label>
+        <input type="radio" id="ja" value="ja" name="kontakt">
+        <label for="nej">Nej</label>
+        </fieldset>
+        <!--Radio gør at man kun an vælge 1-->
+
+        <input type="submit" name="sumbit" value="Send besked">
+
+    </form><!--For at lave formen - SKAL være der, et krav-->
+    <!--label = vigtigt for at difinere hvad der skal udfyldes-->
+    <!--input = input er informationen -->
+    <!--textarea er det tekstområde til en besked--> 
+
+
+    </main>
+</body>
+</html>

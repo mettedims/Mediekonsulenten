@@ -33,7 +33,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #FFFFFF;
-  border-bottom: 15px solid #578DCB;
+  border-bottom: 15px solid #568DCA;
 }
 
 nav {
@@ -62,7 +62,7 @@ nav a {
   text-decoration: none;
 }
 nav ul a:hover {
-  color: #CC4B00;
+  color: #CB4D27;
 }
 
 .mobile-nav .bars {
@@ -74,18 +74,12 @@ nav ul a:hover {
   margin-bottom: 1em;
 }
 .header-img .banner-tekst {
-  left: 25%;
+  left: 30%;
   top: 70%;
   position: absolute;
 }
-.header-img h1 {
-  font-size: 3.5vw;
-}
-.header-img p {
-  font-size: 2vw;
-}
 .header-img a {
-  background-color: #CC4B00;
+  background-color: #CB4D27;
   padding: 0.8em 1em;
   border-radius: 8px;
   color: #ffffff;
@@ -124,7 +118,7 @@ main .cta-wrapper {
   display: block;
 }
 .cta-1 a {
-  background-color: #CC4B00;
+  background-color: #CB4D27;
   padding: 0.8em 1em;
   border-radius: 8px;
   color: #ffffff;
@@ -148,7 +142,7 @@ main .cta-wrapper {
   display: block;
 }
 .cta-2 a {
-  background-color: #CC4B00;
+  background-color: #CB4D27;
   padding: 0.8em 1em;
   border-radius: 8px;
   color: #ffffff;
@@ -172,7 +166,7 @@ main .cta-wrapper {
   display: block;
 }
 .cta-3 a {
-  background-color: #CC4B00;
+  background-color: #CB4D27;
   padding: 0.8em 1em;
   border-radius: 8px;
   color: #ffffff;
@@ -192,7 +186,7 @@ main .cta-wrapper {
 
 .tekst-v {
   grid-column: 1/5;
-  background-color: #578DCB;
+  background-color: #568DCA;
   padding: 2em 4em 4em 4em;
 }
 .tekst-v p {
@@ -206,7 +200,7 @@ main .cta-wrapper {
   text-align: left;
 }
 .tekst-v .knapvihardig {
-  background-color: #CC4B00;
+  background-color: #CB4D27;
   padding: 0.8em 1em;
   border-radius: 8px;
   color: #ffffff;
@@ -244,6 +238,14 @@ main .cta-wrapper {
   text-align: left;
 }
 
+.billede-rund {
+  grid-column: 1/8;
+  background-image: url(img/kopicirkel.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .kontakt-bg-img {
   grid-column: 1/7;
   background: url("img/streger.png");
@@ -252,7 +254,7 @@ main .cta-wrapper {
 
 .kontaktform {
   border-radius: 5px;
-  background-color: #578DCB;
+  background-color: #568DCA;
   padding: 1.3em;
   width: 50%;
   margin: 4em auto;
@@ -273,7 +275,7 @@ main .cta-wrapper {
 input[type=text], input[type=email], input[type=tel], select, textarea {
   width: 100%;
   padding: 1em;
-  border: 2px solid #578DCB;
+  border: 2px solid #568DCA;
   border-radius: 4px;
   box-sizing: border-box;
   margin: 0.5em 1em 1em 1em;
@@ -281,7 +283,7 @@ input[type=text], input[type=email], input[type=tel], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #CC4B00;
+  background-color: #CB4D27;
   padding: 0.8em 1em;
   border-radius: 8px;
   color: #ffffff;

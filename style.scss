@@ -90,19 +90,11 @@ nav {
 
     // ret knap!!!!!!!!!!
     .banner-tekst{
-        left: 25%;
+        left: 30%;
         top: 70%;
         position: absolute;
     }
 
-        h1{
-            font-size: 3.5vw;
-        }
-            
-        p{
-            font-size: 2vw;
-        }
-            
         a{
             @include partials.btn;
 
@@ -254,7 +246,11 @@ main{
 }
 
 .billede-rund{
-    
+    grid-column: 1/8;
+    background-image: url(img/kopicirkel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
 }
 
     // lav rund billede!!!!!!
@@ -264,7 +260,7 @@ main{
 // Personale bokse
 
 // Kontakt os side.
-// 
+// Kontakt os section - Lav styling!!!!
 
 // Kontaktform
 .kontakt-bg-img{
@@ -326,7 +322,7 @@ input[type=submit] {
 	border: 0 !important;
 }
 
-// Footer
+// Footer - Lav styling!!!
 
 
 

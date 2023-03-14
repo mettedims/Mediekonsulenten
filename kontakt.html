@@ -3,92 +3,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <title>mediekonsulenten.dk/kontakt</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1f99888007.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <a class="logo" href="om.html"><img src="img/logo.png" alt="firmalogo af en ræv"></a>
+    <div class="container">
+     <!--Navigation-->
+     <header>
+        <!--Hamburger menu-->
+        <nav class="mobile-nav">
+            <a href="index.html"><img src="img/logolangtm.png" alt="mediekonsulenten logo"></a>
+            <i class="navToggle bars fa-solid fa-bars fa-2xl"></i>
+        </nav>
+        <nav class="desktop-nav">
+        <!--Desktop navigation-->
             <ul>
-                <!--ul>li*2>a>-->
-                <li><a href="om.html">Om</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a class="active" href="#">Forside</a></li>
+                <li><a href="#">Om os</a></li>
+                <li><a href="#">Vi tilbyder</a></li>
+                <li><a href="kontakt.html">Kontakt os</a></li>
             </ul>
-        
         </nav>
     </header>
-    <main class="kontaktform">
-    <h1>Kontakter</h1>
-        <h2>Herunder kan du kontakte os via kontaktformularen</h2>
-    <form>
-        <label for="navn">Navn</label>
-        <input id="navn" type="text">
 
-        <label class="visually-hidden" for="adresse">Adresse</label>
-        <!--visually-hidden betyder at adressen bliver gemt udenfor boksen, men den derimod bliver læst op-->
-        <input placeholder="Adresse" id="adresse" type="text">
-        <!--Placeholder er teksten der skal erstattes-->
+    <!--indsæt section her-->
+   
 
-        <label for="mail">e-mail</label>
-        <input id="mail" type="email" required>
-        <!--required betyder at denne skal boxs skal udfyldes-->
-
-        <label for="telefom">Telefonnummer</label>
-        <input id="telefon" type="tel">
-
-        <label for="parti">Vælg dit parti</label>
-        <select id="parti" name="select">
-            <option value="0" selected="true" disabled>Vælg dit parti</option>
-            <option value="1">SF</option>
-            <option value="2">Frie Grønne</option>
-            <option value="3">Danmarks demokraterne</option>
-            <option value="4">Socialdekratiet</option>
-        </select>
-        <!--select og option er for at lave en dropdown menu-->
-        <!--value er nummer for rækkefølgen og 0 er default-->
-
-        <fieldset class="checkbox">
-            <legend>Vælg services</legend>
-        <div>
-            <input id="støvsugning" type="checkbox" name="services" value="Rengøring">
-            <label for="støvsugning">Rengøring</label>
-            </div>
-       
-        <!--fieldset er er moren "boxen"-->
-        <!--legend er overskrift i "boxen"-->
-        <!--name = sanne navn så man kan vælge 1 i radio-->
-        <div>
-            <input id="opvasker" type="checkbox" name="services" value="Opvasker">
-            <label for="opvasker">Opvasker</label>
+    <!--Kontaktformular-->
+    <section class="kontakt-bg-img">
+        <form class="kontaktform">
+            <h3>Kontakt os</h3>
+            <p>Kontakt os nedenfor hvis du ønsker et uforpligtende tilbud.</p>
+            <div class="section-form">
+                <label class="visually-hidden" for="navn">Navn</label>
+                <input placeholder="Navn" id="navn" type="text" required>
+   
+                <label class="visually-hidden" for="mail">E-mail</label>
+                <input placeholder="E-mail" id="mail" type="email">
             </div>
 
-         <div>
-            <input id="avisbud" type="checkbox" name="services" value="Avisbud">
-            <label for="avisbud">Avisbud</label>
+            <div class="section-form"> 
+                <label class="visually-hidden" for="telefon">Telefonnummer</label>
+                <input placeholder="Telefon" id="telefon" type="tel">
+            
+                <label class="visually-hidden" for="region">Vælg region</label>
+                    <select id="region" name="select">
+                        <option value="0" selected="true" disabled>Vælg region</option>
+                        <option value="1">Region Nordjylland</option>
+                        <option value="2">Region Midtjylland</option>
+                        <option value="3">Region Syddanmark</option>
+                        <option value="4">Region Sjælland</option>
+                        <option value="5">Region Hovedstaden</option>
+                    </select>
+             </div>
+             <div class="section-form">
+             <label class="visually-hidden" for="besked">Besked</label>
+             <textarea placeholder="Besked" id="besked" rows="8"></textarea>
             </div>
-        </fieldset>
-
-        <label for="besked">Besked</label>
-        <textarea id="besked" rows="8" cols="20"></textarea>
-
-        <fieldset>
-            <legend>Må vi gerne kontakte dig på telefonen?</legend>
-        <input type="radio" id="ja" value="ja" name="kontakt">
-        <label for="ja">Ja</label>
-        <input type="radio" id="ja" value="ja" name="kontakt">
-        <label for="nej">Nej</label>
-        </fieldset>
-        <!--Radio gør at man kun an vælge 1-->
-
-        <input type="submit" name="sumbit" value="Send besked">
-
-    </form><!--For at lave formen - SKAL være der, et krav-->
-    <!--label = vigtigt for at difinere hvad der skal udfyldes-->
-    <!--input = input er informationen -->
-    <!--textarea er det tekstområde til en besked--> 
+            <div class="section-form">
+             <input type="submit" name="submit" value="Send besked">
+            </div>
+         </form>
+    </section>
 
 
-    </main>
+     <!--Footer-->
+     <footer>
+        <section class="footer-left">
+            <h4>Info</h4>
+            <p>Mediekonsulenten.dk</p>
+            <p>havneparken 1</p>
+            <p>6000 Kolding</p>
+            <p>Tlf.: <a href="tel:12345678">12 34 56 78</a></p>
+            <p>CVR: 1234 5678</p>
+        </section>
+        <div class="footer-right">
+            <img class="logo-footer" src="img/logoudentekst.png" alt="Logo uden tekst">
+        </div>
+    </div>
+    
+    <!--Javascript som gør burger menu aktiv - så menupunkter kan ses -  ved at indsætte class 'toggleShow' ved click på class 'navToggle'-->
+    <script>
+        const navbarToggle = () => {
+        const nav = document.querySelector('.desktop-nav');
+        nav.classList.toggle('toggleShow');
+        }
+        document.querySelector('.navToggle').addEventListener('click', navbarToggle);
+    </script>
 </body>
 </html>

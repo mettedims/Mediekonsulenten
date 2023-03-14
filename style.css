@@ -7,7 +7,7 @@ body {
   background-color: #FFFFFF;
 }
 body p {
-  font-size: 16px;
+  font-size: 14px;
   color: #000000;
   line-height: 1.5;
 }
@@ -74,8 +74,8 @@ nav ul a:hover {
   margin-bottom: 1em;
 }
 .header-img .banner-tekst {
-  left: 30%;
-  top: 70%;
+  left: 45%;
+  top: 90%;
   position: absolute;
 }
 .header-img a {

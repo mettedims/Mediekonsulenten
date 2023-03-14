@@ -8,7 +8,7 @@ body{
     background-color: partials.$bg-color;
 
         p{
-            font-size: 16px;
+            font-size: 14px;
             color: partials.$text-color;
             line-height: 1.5;
         }
@@ -90,8 +90,8 @@ nav {
 
     // ret knap!!!!!!!!!!
     .banner-tekst{
-        left: 30%;
-        top: 70%;
+        left: 45%;
+        top: 90%;
         position: absolute;
     }
 
@@ -184,7 +184,6 @@ main{
 }
 
 // text og billede section
-    // ret knapper!!!!
 .txt-img-section{
     grid-column: 1/7;
     display: grid;
@@ -253,13 +252,11 @@ main{
     background-position:center;
 }
 
-    // lav rund billede!!!!!!
-
 // Billede med CTA section
 
 // Personale bokse
 
-// Kontakt os side.
+// -----------------------------------------------Kontakt os side. -------------------------------------------------------------
 // Kontakt os section - Lav styling!!!!
 
 // Kontaktform

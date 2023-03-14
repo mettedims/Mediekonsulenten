@@ -1,0 +1,36 @@
+/*Variabler*/
+$bg-color: #FFFFFF; 
+$nav-color: #FFFFFF;
+$footer-color: #FFFFFF;
+$primary-color: #CB4D27;
+$secondary-color: #568DCA;
+$img-color-1: #74C8B0;
+$img-color-2: #D7DF70;
+$img-color-3: #24B4D5;
+$text-color: #000000;
+$alt-text-color:#FFFFFF;
+$padding: 0.5em;
+$font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+/*Mixins*/
+@mixin flex($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin btn($bg-color: $primary-color, $btn-padding: 0.8em 1em){
+    background-color: $bg-color;
+    padding: $btn-padding;
+    border-radius: 8px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+
+@mixin cta-box($width:20vw){
+    background-color: #ffffff;
+    width: $width;
+    padding: 2em;
+    margin: 2em auto;
+}

@@ -312,6 +312,40 @@ main .cta-wrapper {
   margin-bottom: 2em;
 }
 
+.txt-img-section-slut {
+  grid-column: 1/7;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.tekst {
+  grid-column: 1/5;
+  background-color: #568DCA;
+  padding: 2em 4em 4em 4em;
+}
+.tekst p {
+  color: #000000;
+}
+.tekst p:nth-of-type(4) {
+  margin-bottom: 3em;
+}
+.tekst h2 {
+  color: #000000;
+  text-align: left;
+}
+.tekst a {
+  background-color: #CB4D27;
+  padding: 0.8em 1em;
+  border-radius: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.billede {
+  grid-column: 5/8;
+}
+
 .kontakt-bg-img {
   grid-column: 1/7;
   background: url("img/streger.png");
@@ -320,7 +354,7 @@ main .cta-wrapper {
 
 .kontaktform {
   border-radius: 5px;
-  background-color: #568DCA;
+  background-color: #FFFFFF;
   padding: 1.3em;
   width: 50%;
   margin: 4em auto;

@@ -77,18 +77,16 @@ nav {
     }
 }
 
-    // Hvad er dettte?!!!!
-// .toggleShow {
-//     display: flex !important;
-//     flex-direction: column;
-// }
+.toggleShow {
+    display: flex !important;
+    flex-direction: column;
+}
 
 // Header billede section
 .header-img{
     position: relative;
     margin-bottom: 1em;
 
-    // ret knap!!!!!!!!!!
     .banner-tekst{
         left: 45%;
         top: 90%;
@@ -97,7 +95,6 @@ nav {
 
         a{
             @include partials.btn;
-
         }
 
         .kontorbillede-mobil{
@@ -125,7 +122,6 @@ main{
 }
 
 // Call-to-action bokse
-    // ret!!!!!!!!
 .cta-1{
     @include partials.cta-box;
 

@@ -208,20 +208,44 @@ main{
 }
 
 .billede{
-   
+    grid-column: 5/8;
+    background-image: url(img/pc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
 }
 
 // Text og billede section rund
-.billede-rund{
-    
-}
-
 .txt-img-section-rund{
-  
+    grid-column: 6/7;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
 }
 
 .tekst-h{
-    
+    grid-column: 4/5;
+    background-color: partials.$bg-color;
+    padding: 2em 4em 4em 4em;
+        p{
+        color: partials.$text-color;
+        }
+
+        p:nth-of-type(4){
+        margin-bottom: 3em;
+        }
+
+        h2{
+        color: partials.$text-color;
+        text-align: left;  
+        }
+}
+
+.billede-rund{
+    grid-column: 1/8;
+    background-image: url(img/kopicirkel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
 }
 
 // Billede med CTA section

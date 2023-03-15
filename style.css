@@ -69,11 +69,6 @@ nav ul a:hover {
   display: none;
 }
 
-.toggleShow {
-  display: flex !important;
-  flex-direction: column;
-}
-
 .header-img {
   position: relative;
   margin-bottom: 1em;
@@ -213,6 +208,36 @@ main .cta-wrapper {
   text-align: center;
 }
 
+.billede {
+  grid-column: 5/8;
+}
+
+.txt-img-section-rund {
+  grid-column: 1/7;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.tekst-h {
+  grid-column: 4/8;
+  background-color: #FFFFFF;
+  padding: 2em 4em 4em 4em;
+}
+.tekst-h p {
+  color: #000000;
+}
+.tekst-h p:nth-of-type(4) {
+  margin-bottom: 3em;
+}
+.tekst-h h2 {
+  color: #000000;
+  text-align: left;
+}
+
+.billede-rund {
+  grid-column: 1/4;
+}
+
 .kontakt-bg-img {
   grid-column: 1/7;
   background: url("img/streger.png");
@@ -221,7 +246,7 @@ main .cta-wrapper {
 
 .kontaktform {
   border-radius: 5px;
-  background-color: #FFFFFF;
+  background-color: #568DCA;
   padding: 1.3em;
   width: 50%;
   margin: 4em auto;

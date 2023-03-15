@@ -77,16 +77,18 @@ nav {
     }
 }
 
-.toggleShow {
-    display: flex !important;
-    flex-direction: column;
-}
+    // Hvad er dettte?!!!!
+// .toggleShow {
+//     display: flex !important;
+//     flex-direction: column;
+// }
 
 // Header billede section
 .header-img{
     position: relative;
     margin-bottom: 1em;
 
+    // ret knap!!!!!!!!!!
     .banner-tekst{
         left: 45%;
         top: 90%;
@@ -95,6 +97,7 @@ nav {
 
         a{
             @include partials.btn;
+
         }
 
         .kontorbillede-mobil{
@@ -122,6 +125,7 @@ main{
 }
 
 // Call-to-action bokse
+    // ret!!!!!!!!
 .cta-1{
     @include partials.cta-box;
 
@@ -207,23 +211,39 @@ main{
         }
 }
 
-// .billede{
-   
-// }
+.billede{
+grid-column: 5/8;
+}
 
-// // Text og billede section rund
-// .billede-rund{
-    
-// }
+// Text og billede section rund
+.txt-img-section-rund{
+    grid-column: 1/7;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
 
-// .txt-img-section-rund{
-  
-// }
+.tekst-h{
+    grid-column: 4/8;
+    background-color: partials.$bg-color;
+    padding: 2em 4em 4em 4em;
+        p{
+        color: partials.$text-color;
+        }
 
-// .tekst-h{
-    
-// }
+        p:nth-of-type(4){
+        margin-bottom: 3em;
+        }
 
+        h2{
+        color: partials.$text-color;
+        text-align: left;  
+        }
+}
+
+.billede-rund{
+    grid-column: 1/4;
+
+}
 
 // Billede med CTA section
 
@@ -241,7 +261,7 @@ main{
 
 .kontaktform {
     border-radius: 5px;
-    background-color: partials.$bg-color;
+    background-color: partials.$secondary-color;
     padding: 1.3em;
     width: 50%;
     margin: 4em auto;
@@ -292,7 +312,12 @@ input[type=submit] {
 	border: 0 !important;
 }
 
-// Footer - Lav styling!!!
+// -----------------------------------------------------------------------------
+
+// Footer
+
+
+
 
 
 

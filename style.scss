@@ -8,7 +8,7 @@ body{
     background-color: partials.$bg-color;
 
         p{
-            font-size: 14px;
+            font-size: 20px;
             color: partials.$text-color;
             line-height: 1.5;
         }
@@ -194,7 +194,7 @@ main{
     background-color: partials.$secondary-color;
     padding: 2em 4em 4em 4em;
         p{
-        color: partials.$bg-color;
+        color: partials.$text-color;
         }
 
         p:nth-of-type(4){
@@ -202,7 +202,7 @@ main{
         }
 
         h2{
-        color: partials.$bg-color;
+        color: partials.$text-color;
         text-align: left;  
         }
         .knapvihardig{
@@ -240,10 +240,23 @@ grid-column: 5/8;
 }
 
 .billede-rund{
-    grid-column: 1/4;
+    grid-column: 2/4;
 }
 
 // Billede med CTA section
+.img-m-cta{
+    grid-column: 1/7;
+    border-top: 15px solid partials.$secondary-color;
+    border-bottom: 15px solid partials.$secondary-color;
+
+        a{
+            @include partials.btn;
+        }
+
+        .fugleperspektiv-mobil{
+            display: none;
+        }
+}
 
 // Personale bokse
 

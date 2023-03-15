@@ -7,7 +7,7 @@ body {
   background-color: #FFFFFF;
 }
 body p {
-  font-size: 14px;
+  font-size: 20px;
   color: #000000;
   line-height: 1.5;
 }
@@ -190,13 +190,13 @@ main .cta-wrapper {
   padding: 2em 4em 4em 4em;
 }
 .tekst-v p {
-  color: #FFFFFF;
+  color: #000000;
 }
 .tekst-v p:nth-of-type(4) {
   margin-bottom: 3em;
 }
 .tekst-v h2 {
-  color: #FFFFFF;
+  color: #000000;
   text-align: left;
 }
 .tekst-v .knapvihardig {
@@ -235,7 +235,24 @@ main .cta-wrapper {
 }
 
 .billede-rund {
-  grid-column: 1/4;
+  grid-column: 2/4;
+}
+
+.img-m-cta {
+  grid-column: 1/7;
+  border-top: 15px solid #568DCA;
+  border-bottom: 15px solid #568DCA;
+}
+.img-m-cta a {
+  background-color: #CB4D27;
+  padding: 0.8em 1em;
+  border-radius: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+.img-m-cta .fugleperspektiv-mobil {
+  display: none;
 }
 
 .kontakt-bg-img {

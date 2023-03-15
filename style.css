@@ -8,7 +8,7 @@ body {
 }
 
 body p {
-  font-size: 16px;
+  font-size: 14px;
   color: #000000;
   line-height: 1.5;
 }
@@ -81,7 +81,7 @@ nav ul a:hover {
 }
 
 .header-img .banner-tekst {
-  left: 25%;
+  left: 30%;
   top: 70%;
   position: absolute;
 }

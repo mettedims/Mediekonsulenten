@@ -318,6 +318,38 @@ grid-column: 5/8;
     }
 }
 
+// Slut tekst og billede section
+.txt-img-section-slut{
+    grid-column: 1/7;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.tekst{
+    grid-column: 1/5;
+    background-color: partials.$secondary-color;
+    padding: 2em 4em 4em 4em;
+        p{
+        color: partials.$text-color;
+        }
+
+        p:nth-of-type(4){
+        margin-bottom: 3em;
+        }
+
+        h2{
+        color: partials.$text-color;
+        text-align: left;  
+        }
+        a{
+            @include partials.btn;
+        }
+}
+
+.billede{
+grid-column: 5/8;
+}
+
 
 
 // -----------------------------------------------Kontakt os side. -------------------------------------------------------------
@@ -332,7 +364,7 @@ grid-column: 5/8;
 
 .kontaktform {
     border-radius: 5px;
-    background-color: partials.$secondary-color;
+    background-color: partials.$bg-color;
     padding: 1.3em;
     width: 50%;
     margin: 4em auto;

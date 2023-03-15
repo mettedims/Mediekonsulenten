@@ -69,6 +69,11 @@ nav ul a:hover {
   display: none;
 }
 
+.toggleShow {
+  display: flex !important;
+  flex-direction: column;
+}
+
 .header-img {
   position: relative;
   margin-bottom: 1em;
@@ -210,20 +215,16 @@ main .cta-wrapper {
 
 .billede {
   grid-column: 5/8;
-  background-image: url(img/pc.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .txt-img-section-rund {
-  grid-column: 6/7;
+  grid-column: 1/7;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
 }
 
 .tekst-h {
-  grid-column: 4/5;
+  grid-column: 4/8;
   background-color: #FFFFFF;
   padding: 2em 4em 4em 4em;
 }
@@ -239,11 +240,7 @@ main .cta-wrapper {
 }
 
 .billede-rund {
-  grid-column: 1/8;
-  background-image: url(img/kopicirkel.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  grid-column: 1/4;
 }
 
 .kontakt-bg-img {

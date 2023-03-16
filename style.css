@@ -267,16 +267,7 @@ main .cta-wrapper {
 }
 
 .billede-rund {
-  grid-column: 5/8;
-  display: flex;
-  justify-content: center;
-  width: 90%;
-  align-items: center;
-}
-.billede-rund img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  display: none;
 }
 
 .img-m-cta {
@@ -321,8 +312,7 @@ main .cta-wrapper {
   color: #ffffff;
   text-decoration: none;
   text-align: center;
-  width: 20%;
-  margin: 0 5em 2em 2em;
+  margin: 2em 5em 0em 2em;
 }
 
 .p-1 {
@@ -383,27 +373,31 @@ main .cta-wrapper {
   grid-column: 1/7;
   display: grid;
 }
-.txt-img-section-slut .tekst-slut {
+
+.tekst-slut {
   grid-column: 1/5;
   background-color: #568DCA;
   padding: 2em 0 2em 4em;
   display: flex;
 }
-.txt-img-section-slut .tekst-slut .tekst-sektion {
+.tekst-slut .tekst-sektion {
   display: flex;
   flex-direction: column;
+  width: 80%;
+  align-items: center;
+  order: 2;
 }
-.txt-img-section-slut .tekst-slut .tekst-sektion p {
+.tekst-slut .tekst-sektion p {
   color: #000000;
 }
-.txt-img-section-slut .tekst-slut .tekst-sektion p:nth-of-type(4) {
+.tekst-slut .tekst-sektion p:nth-of-type(4) {
   margin-bottom: 3em;
 }
-.txt-img-section-slut .tekst-slut .tekst-sektion h2 {
+.tekst-slut .tekst-sektion h2 {
   color: #000000;
   text-align: left;
 }
-.txt-img-section-slut .tekst-slut .tekst-sektion a {
+.tekst-slut .tekst-sektion a {
   background-color: #CB4D27;
   padding: 0.8em 1em;
   border-radius: 8px;
@@ -413,15 +407,16 @@ main .cta-wrapper {
   width: 50%;
   margin: 5em 0 0 0;
 }
-.txt-img-section-slut .billede {
+
+.billede {
   grid-column: 5/8;
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 90%;
   align-items: center;
 }
-.txt-img-section-slut .billede img {
-  width: 50%;
+.billede img {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }

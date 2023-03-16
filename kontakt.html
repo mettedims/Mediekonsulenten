@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="da">
 <head>
     <meta charset="UTF-8">
@@ -7,84 +8,87 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/1f99888007.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+
     <div class="container">
-     <!--Navigation-->
-     <header>
-        <!--Hamburger menu-->
-        <nav class="mobile-nav">
-            <a href="index.html"><img src="img/logolangtm.png" alt="mediekonsulenten logo"></a>
-            <i class="navToggle bars fa-solid fa-bars fa-2xl"></i>
-        </nav>
-        <nav class="desktop-nav">
-        <!--Desktop navigation-->
-            <ul>
-                <li><a class="active" href="#">Forside</a></li>
-                <li><a href="#">Om os</a></li>
-                <li><a href="#">Vi tilbyder</a></li>
-                <li><a href="kontakt.html">Kontakt os</a></li>
-            </ul>
-        </nav>
-    </header>
+        <!--Navigation-->
+        <header>
+            <!--Hamburger menu-->
+            <nav class="mobile-nav">
+                <a href="index.html"><img src="img/logolangtm.png" alt="mediekonsulenten logo"></a>
+                <i class="navToggle bars fa-solid fa-bars fa-2xl"></i>
+            </nav>
+            <nav class="desktop-nav">
+            <!--Desktop navigation-->
+                <ul>
+                    <li><a class="active" href="#">Forside</a></li>
+                    <li><a href="#">Om os</a></li>
+                    <li><a href="#">Vi tilbyder</a></li>
+                    <li><a href="kontakt.html">Kontakt os</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <!--kontakt os section-->
-   <section class="kontakt-top">
-        <h2>Kontakt os endelig</h2>
-        <p>Vi står altid klar til at rådgive og vejlede, om du har spørgsmål, feedback eller ønsker et tilbud på en hjemmeside, pakkeløsning, eller andre af vores produkter. </p>
-        <img src="img/medieos.png" alt="Billede af medarbejdere">
-   </section>
-
-    <!--Kontaktformular-->
-    <section class="kontakt-bg-img">
-        <img src="img/streger.png" alt="streger design">
-        <form class="kontaktform">
-            <h3>Kontakt os</h3>
-            <p>Kontakt os nedenfor hvis du ønsker et uforpligtende tilbud.</p>
-            <div class="section-form">
-                <label class="visually-hidden" for="navn">Navn</label>
-                <input placeholder="Navn" id="navn" type="text" required>
-   
-                <label class="visually-hidden" for="mail">E-mail</label>
-                <input placeholder="E-mail" id="mail" type="email">
-            </div>
-
-            <div class="section-form"> 
-                <label class="visually-hidden" for="telefon">Telefonnummer</label>
-                <input placeholder="Telefon" id="telefon" type="tel">
-            
-                <label class="visually-hidden" for="region">Vælg region</label>
-                    <select id="region" name="select">
-                        <option value="0" selected="true" disabled>Vælg region</option>
-                        <option value="1">Region Nordjylland</option>
-                        <option value="2">Region Midtjylland</option>
-                        <option value="3">Region Syddanmark</option>
-                        <option value="4">Region Sjælland</option>
-                        <option value="5">Region Hovedstaden</option>
-                    </select>
-             </div>
-             <div class="section-form">
-             <label class="visually-hidden" for="besked">Besked</label>
-             <textarea placeholder="Besked" id="besked" rows="8"></textarea>
-            </div>
-            <div class="section-form">
-             <input type="submit" name="submit" value="Send besked">
-            </div>
-         </form>
+        <!--kontakt os section-->
+    <section class="kontakt-top">
+            <h2>Kontakt os endelig</h2>
+            <p>Vi står altid klar til at rådgive og vejlede, om du har spørgsmål, feedback eller ønsker et tilbud på en hjemmeside, pakkeløsning, eller andre af vores produkter. </p>
+            <img src="img/medieos.png" alt="Billede af medarbejdere">
     </section>
 
-     <!--Footer-->
-     <footer>
-        <section class="footer-left">
-            <h4>Kontakt</h4>
-            <p>Mediekonsulenten.dk</p>
-            <p>Havneparken 1</p>
-            <p>6000 Kolding</p>
-            <p>Tlf.: <a href="tel:12345678">12 34 56 78</a></p>
-            <p>CVR: 1234 5678</p>
+        <!--Kontaktformular-->
+        <section class="kontakt-bg-img">
+            <img src="img/streger.png" alt="streger design">
+            <form class="kontaktform">
+                <h3>Kontakt os</h3>
+                <p>Kontakt os nedenfor hvis du ønsker et uforpligtende tilbud.</p>
+                <div class="section-form">
+                    <label class="visually-hidden" for="navn">Navn</label>
+                    <input placeholder="Navn" id="navn" type="text" required>
+    
+                    <label class="visually-hidden" for="mail">E-mail</label>
+                    <input placeholder="E-mail" id="mail" type="email">
+                </div>
+
+                <div class="section-form"> 
+                    <label class="visually-hidden" for="telefon">Telefonnummer</label>
+                    <input placeholder="Telefon" id="telefon" type="tel">
+                
+                    <label class="visually-hidden" for="region">Vælg region</label>
+                        <select id="region" name="select">
+                            <option value="0" selected="true" disabled>Vælg region</option>
+                            <option value="1">Region Nordjylland</option>
+                            <option value="2">Region Midtjylland</option>
+                            <option value="3">Region Syddanmark</option>
+                            <option value="4">Region Sjælland</option>
+                            <option value="5">Region Hovedstaden</option>
+                        </select>
+                </div>
+                <div class="section-form">
+                    <label class="visually-hidden" for="besked">Besked</label>
+                    <textarea placeholder="Besked" id="besked" rows="8"></textarea>
+                </div>
+                <div class="section-form">
+                    <input type="submit" name="submit" value="Send besked">
+                </div>
+            </form>
         </section>
-        <div class="footer-right">
-            <img class="logo-footer" src="img/logoudentekst.png" alt="Logo uden tekst">
-        </div>
+
+        <!--Footer-->
+        <footer>
+            <section class="footer-left">
+                <h4>Kontakt</h4>
+                <p>Mediekonsulenten.dk</p>
+                <p>Havneparken 1</p>
+                <p>6000 Kolding</p>
+                <p>Tlf.: <a href="tel:12345678">12 34 56 78</a></p>
+                <p>CVR: 1234 5678</p>
+            </section>
+            <div class="footer-right">
+                <img class="logo-footer" src="img/logoudentekst.png" alt="Logo uden tekst">
+            </div>
+        </footer>
     </div>
     
     <!--Javascript som gør burger menu aktiv - så menupunkter kan ses -  ved at indsætte class 'toggleShow' ved click på class 'navToggle'-->

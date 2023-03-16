@@ -48,7 +48,7 @@ nav {
     @include partials.flex($justify: space-between);
     
     img {
-        width: 180px;
+        width: 250px;
     }
     
     ul {
@@ -60,7 +60,7 @@ nav {
         color: partials.$text-color;
         padding: partials.$padding;
         margin: partials.$padding;
-        font-size: 14px;
+        font-size: 20px;
         font-weight: bold;
         text-decoration: none;
     }
@@ -77,11 +77,10 @@ nav {
     }
 }
 
-    // Hvad er dettte?!!!!
-// .toggleShow {
-//     display: flex !important;
-//     flex-direction: column;
-// }
+.toggleShow {
+    display: flex !important;
+    flex-direction: column;
+}
 
 // Header billede section
 .header-img{
@@ -90,8 +89,8 @@ nav {
 
     // ret knap!!!!!!!!!!
     .banner-tekst{
-        left: 45%;
-        top: 90%;
+        left: 41%;
+        top: 85%;
         position: absolute;
     }
 
@@ -130,7 +129,7 @@ main{
 
     img{
         margin: 0 auto;
-        width: 60%;
+        width: 90%;
         display: block;
     }
 
@@ -149,7 +148,7 @@ main{
 
     img{
         margin: 0 auto;
-        width: 60%;
+        width: 90%;
         display: block;
     }
 
@@ -168,7 +167,7 @@ main{
 
     img{
         margin: 0 auto;
-        width: 60%;
+        width: 90%;
         display: block;
     }
 
@@ -205,7 +204,8 @@ main{
         color: partials.$text-color;
         text-align: left;  
         }
-        .knapvihardig{
+
+        a{
             @include partials.btn;
         }
 }
@@ -219,6 +219,8 @@ grid-column: 5/8;
     grid-column: 1/7;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 
 .tekst-h{
@@ -274,11 +276,14 @@ grid-column: 5/8;
     margin: 5em;
     border-color: solid partials.$img-color-1;
     background-color: partials.$img-color-1;
+    border-radius: 30px;
+    padding: 1%;
     
     img{
         margin: 0 auto;
-        width: 60%;
+        width: 80%;
         display: block;
+        border-radius: 15px;
     }
 
     p{
@@ -290,11 +295,14 @@ grid-column: 5/8;
     margin: 5em;
     border-color: partials.$img-color-2;
     background-color: partials.$img-color-2;
+    border-radius: 30px;
+    padding: 1%;
 
     img{
         margin: 0 auto;
-        width: 60%;
+        width: 80%;
         display: block;
+        border-radius: 15px;
     }
 
     p{
@@ -306,11 +314,13 @@ grid-column: 5/8;
     margin: 5em;
     border-color: partials.$img-color-3;
     background-color: partials.$img-color-3;
-
+    border-radius: 30px;
+    padding: 1%;
     img{
         margin: 0 auto;
-        width: 60%;
+        width: 80%;
         display: block;
+        border-radius: 15px;
     }
 
     p{
@@ -423,7 +433,26 @@ input[type=submit] {
 // -----------------------------------------------------------------------------
 
 // Footer
+footer{
+    grid-column: 1/6;
+    @include partials.flex($justify: space-between);
+    background-color: partials.$nav-color;
+    border-bottom: 15px solid partials.$secondary-color;
 
+    img{
+        max-width: 10em;
+        padding: 3em;
+    }
+
+    p{
+        font-size: 14px;
+        margin-left: 3em;
+    }
+
+    h4{
+        margin-left: 3em;
+    }
+}
 
 
 

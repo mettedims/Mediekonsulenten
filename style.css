@@ -45,7 +45,7 @@ nav {
   align-items: center;
 }
 nav img {
-  width: 180px;
+  width: 250px;
 }
 nav ul {
   display: flex;
@@ -57,7 +57,7 @@ nav a {
   color: #000000;
   padding: 0.5em;
   margin: 0.5em;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -69,13 +69,18 @@ nav ul a:hover {
   display: none;
 }
 
+.toggleShow {
+  display: flex !important;
+  flex-direction: column;
+}
+
 .header-img {
   position: relative;
   margin-bottom: 1em;
 }
 .header-img .banner-tekst {
-  left: 45%;
-  top: 90%;
+  left: 41%;
+  top: 85%;
   position: absolute;
 }
 .header-img a {
@@ -114,7 +119,7 @@ main .cta-wrapper {
 }
 .cta-1 img {
   margin: 0 auto;
-  width: 60%;
+  width: 90%;
   display: block;
 }
 .cta-1 a {
@@ -138,7 +143,7 @@ main .cta-wrapper {
 }
 .cta-2 img {
   margin: 0 auto;
-  width: 60%;
+  width: 90%;
   display: block;
 }
 .cta-2 a {
@@ -162,7 +167,7 @@ main .cta-wrapper {
 }
 .cta-3 img {
   margin: 0 auto;
-  width: 60%;
+  width: 90%;
   display: block;
 }
 .cta-3 a {
@@ -199,7 +204,7 @@ main .cta-wrapper {
   color: #000000;
   text-align: left;
 }
-.tekst-v .knapvihardig {
+.tekst-v a {
   background-color: #CB4D27;
   padding: 0.8em 1em;
   border-radius: 8px;
@@ -216,6 +221,8 @@ main .cta-wrapper {
   grid-column: 1/7;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  margin-top: 5em;
+  margin-bottom: 5em;
 }
 
 .tekst-h {
@@ -274,11 +281,14 @@ main .cta-wrapper {
   margin: 5em;
   border-color: solid #74C8B0;
   background-color: #74C8B0;
+  border-radius: 30px;
+  padding: 1%;
 }
 .p-1 img {
   margin: 0 auto;
-  width: 60%;
+  width: 80%;
   display: block;
+  border-radius: 15px;
 }
 .p-1 p {
   margin-bottom: 2em;
@@ -288,11 +298,14 @@ main .cta-wrapper {
   margin: 5em;
   border-color: #D7DF70;
   background-color: #D7DF70;
+  border-radius: 30px;
+  padding: 1%;
 }
 .p-2 img {
   margin: 0 auto;
-  width: 60%;
+  width: 80%;
   display: block;
+  border-radius: 15px;
 }
 .p-2 p {
   margin-bottom: 2em;
@@ -302,11 +315,14 @@ main .cta-wrapper {
   margin: 5em;
   border-color: #24B4D5;
   background-color: #24B4D5;
+  border-radius: 30px;
+  padding: 1%;
 }
 .p-3 img {
   margin: 0 auto;
-  width: 60%;
+  width: 80%;
   display: block;
+  border-radius: 15px;
 }
 .p-3 p {
   margin-bottom: 2em;
@@ -411,4 +427,24 @@ input[type=submit] {
   clip: rect(0, 0, 0, 0) !important;
   white-space: nowrap !important;
   border: 0 !important;
+}
+
+footer {
+  grid-column: 1/6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-bottom: 15px solid #568DCA;
+}
+footer img {
+  max-width: 10em;
+  padding: 3em;
+}
+footer p {
+  font-size: 14px;
+  margin-left: 3em;
+}
+footer h4 {
+  margin-left: 3em;
 }/*# sourceMappingURL=style.css.map */
